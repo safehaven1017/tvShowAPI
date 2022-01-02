@@ -1,0 +1,118 @@
+body {
+  padding: 50px;
+  font-family: Andes;
+  margin: 0;
+  padding: 0;
+  background-color: #CD2732;
+}
+
+#navbar-container {
+  display: flex;
+  font-size: 2rem;
+  background-image: url("../images/background-image.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 7vw;
+  box-shadow: 0 0px 10px 0px black;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 9999;
+}
+
+#home {
+  width: 33.3%;
+  display: flex;
+  margin-left: 2rem;
+  align-items: center;
+}
+
+#links {
+  width: 33.3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a:link { 
+  color: white;
+  text-decoration: none;
+}
+
+a:visited { 
+  text-decoration: none; 
+  color: white;
+}
+a:hover { 
+  text-decoration: none; 
+  color:white;
+  -webkit-text-stroke: 0.5px black; 
+}
+a:focus { 
+  text-decoration: none; 
+  color:black; 
+}
+
+#right-spacer {
+  width: 33.3%;
+}
+
+.nav-links {
+  margin-right: 3rem;
+  background-color: black;
+  border-radius: 10%;
+  box-shadow: 0 0px 20px 15px black;
+}
+
+#content-container {
+  color: white;
+  -webkit-text-stroke: 0.3px black; 
+}
+
+h1 {
+  margin-top: 11vw;
+  text-align: center;
+  font-size: 70px;
+}
+h2 {
+  /* margin-top: 13vw; */
+  text-align: center;
+  font-size: 30px;
+}
+
+#gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.image-container {
+  height: 20vw;
+  width: 30vw;
+  box-shadow: 0 0px 10px 1px black;
+  margin: 1vw 1vw 1vw 1vw;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+}
+
+@keyframes fadeIn {
+  from {
+   opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.gallery-image {
+  height: inherit;
+  width: inherit;
+}
+
+
+@font-face {
+  font-family: Andes;
+  src: url('../fonts/Andes.ttf');
+}

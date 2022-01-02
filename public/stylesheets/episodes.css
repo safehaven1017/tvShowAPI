@@ -1,0 +1,57 @@
+.episode-container {
+    height: 15vw;
+    width: 70vw;
+    box-shadow: 0 0px 10px 1px black;
+    margin: 0vw 1vw 2vw 1vw;
+    display: flex;
+    align-items: center; 
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    background-color: black;
+    transition: ease 0.5s;
+  }
+
+  .episode-container:hover {
+    box-shadow: 0 0px 2px 1px black, inset 0 0px 3px 1px white;
+  }
+  
+  @keyframes fadeIn {
+    from {
+     opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .splash-container {
+    height: 90%;
+    width: 30%;
+    margin-left: 10px;
+  }
+  .episode-image {
+    height: 100%;
+    width: 100%;
+  }
+  .shadow {
+    position: relative;
+    height: 102%;
+    width: 100%;
+    bottom: 102%;
+    box-shadow: inset 0px 0px 5px 3px black;
+  }
+
+  .details-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0px 5px 0px 5px;
+  }
+  
+  .episode-title {
+    font-size: 2rem;
+  }

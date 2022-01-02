@@ -1,0 +1,43 @@
+.character-container {
+    height: 25vw;
+    width: 20vw;
+    box-shadow: 0 0px 10px 1px black;
+    margin: 1vw 1vw 1vw 1vw;
+    justify-content: center;
+    align-items: center;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    background-color: black;
+  }
+
+  .character-container:hover .text {
+      opacity: 1;
+  }
+  .character-container:hover .character-image {
+      opacity: 0.3;
+  }
+  
+  @keyframes fadeIn {
+    from {
+     opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .character-image {
+    width: inherit;
+    height: inherit;
+    transition: .5s ease;
+  }
+
+  .text {
+      position: relative;
+      bottom: 15vw;
+      text-align: center;
+      opacity: 0;
+      transition: .5s ease;
+      font-size: 1.5rem;
+  }
