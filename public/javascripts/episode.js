@@ -24,7 +24,6 @@ fetch(`http://localhost:3000/btas_api/v1/episodes/${episodeParam}`)
     fetch(`http://localhost:3000/btas_api/v1/characters`)
     .then(res => res.json())
     .then(characters => {
-        console.log(characters);
         for (character of characters) {
             if (episodeInfo.characters.includes(character.id)) {
                 htmlCharacterArray.push(`<div class="character-container">
